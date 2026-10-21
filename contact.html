@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Abnezo Technologies</title>
+    <meta name="description" content="Contact Abnezo Technologies about your next digital growth project.">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar-wrap">
+        <nav class="navbar container">
+            <a href="index.html" class="brand"><img src="assets/logo.png" alt="Abnezo Technologies"></a>
+            <div class="nav-links"><a class="" href="index.html">Home</a><a class="" href="services.html">Services</a><a
+                    class="" href="marketplace-management.html">Marketplace</a><a class="" href="about.html">About</a><a
+                    class="nav-cta" href="contact.html">Let's Talk <i data-lucide="arrow-up-right"></i></a></div>
+            <button class="menu-btn" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
+        </nav>
+    </header>
+    <main class="page-enter">
+        <section class="contact-page">
+            <div class="container contact-grid">
+                <div class="reveal"><span class="eyebrow">CONTACT</span>
+                    <h1>Let's turn your<br><em>next idea into action.</em></h1>
+                    <p>Tell us what you are building, fixing or growing. We’ll get back with the right next step.</p>
+                    <div class="contact-info"><a href="mailto:shagun@abnezotechnologies"><i data-lucide="mail"></i>
+                         shagun@abnezotechnologies</a><a href="tel:+919319610724"><i data-lucide="phone"></i>+91 9319610724</a><span><i data-lucide="map-pin"></i> India</span></div>
+                </div>
+                <div class="reveal">
+                    <form id="contactForm" class="contact-form" data-api="http://localhost:5000">
+                        <label>Name<input required name="name" placeholder="Your name"></label><label>Email<input
+                                required type="email" name="email"
+                                placeholder="you@company.com"></label><label>Phone<input name="phone"
+                                placeholder="+91..."></label>
+                        <label>Service<select name="service">
+                                <option>Website Development</option>
+                                <option>SEO</option>
+                                <option>SMO</option>
+                                <option>Marketplace Management</option>
+                                <option>Social Media Account Handling</option>
+                            </select></label>
+                        <label class="full">Tell us about your project<textarea required rows="6" name="message"
+                                placeholder="What do you want to achieve?"></textarea></label>
+                        <button class="btn btn-primary full" type="submit">Send enquiry <i
+                                data-lucide="arrow-up-right"></i></button>
+                        <div id="formStatus" class="form-success full" style="display:none"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div><img class="footer-logo" src="assets/logo.png" alt="Abnezo Technologies">
+                <p class="footer-copy">Digital experiences, marketplace growth and social media systems built to move
+                    your business forward.</p>
+            </div>
+            <div>
+                <h4>Explore</h4><a href="services.html">Services</a><a href="marketplace-management.html">Marketplace
+                    Management</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <h4>Services</h4><span>Website Development</span><span>SEO &amp; SMO</span><span>Seller Account
+                    Management</span><span>Social Media Handling</span>
+            </div>
+            <div>
+                <h4>Start a project</h4><a href="mailto:hello@abnezo.com"><i data-lucide="mail"></i>
+                    hello@abnezo.com</a><a href="tel:+919999999999"><i data-lucide="phone"></i> +91 99999
+                    99999</a><span><i data-lucide="map-pin"></i> India</span><a class="footer-talk"
+                    href="contact.html">Tell us about your goal <i data-lucide="arrow-up-right"></i></a>
+            </div>
+        </div>
+        <div class="container footer-bottom"><span>© <span class="year"></span> Abnezo Technologies. All rights
+                reserved.</span><span>Built for ambitious brands.</span></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
